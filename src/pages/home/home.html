@@ -3,16 +3,53 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      Home
+    </ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content padding id="page1">
+  <ion-list id="home-list7">
+    <ion-item color="none" id="home-list-item14">
+      Invoice No
+      <ion-note item-right></ion-note>
+      <ion-icon name="pricetags" item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+  <form id="home-form5">
+    <ion-item id="home-input7">
+      <ion-label>
+        Invoice Date
+      </ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
+    </ion-item>
+  </form>
+  <ion-list id="home-list8">
+    <ion-item color="none" on-click="goToAddCustomer()" id="home-list-item26">
+      <ion-icon name="person-add" item-left></ion-icon>
+      Add Customer
+    </ion-item>
+    <ion-item color="none" on-click="goToAddItem()" id="home-list-item28">
+      <ion-icon name="add-circle" item-left></ion-icon>
+      Add Items
+    </ion-item>
+  </ion-list>
+  <div class="spacer" style="width:300px;height:13px;" id="home-spacer4"></div>
+  <ion-list id="home-list9">
+    <ion-item color="none" id="home-list-item29">
+      Sub Total
+      <ion-note item-right></ion-note>
+    </ion-item>
+    <ion-item color="none" id="home-list-item30">
+      Total
+      <ion-note item-right></ion-note>
+    </ion-item>
+    <ion-item color="none" id="home-list-item31">
+      Due
+      <ion-note item-right></ion-note>
+    </ion-item>
+  </ion-list>
+  <button id="home-button2" ion-button color="positive" block>
+    Submit
+  </button>
 </ion-content>
